@@ -20,19 +20,33 @@ Il gère différentes données (produits, utilisateurs, commandes, logs) stocké
 ```
 queenbot/
 │
-├── index.js             # Point d’entrée principal
+├── .env                   # Variables d’environnement (non versionné)
+├── .env.example           # Modèle pour créer son .env
+├── index.js               # Entrée principale
+├── package-lock.json
 ├── package.json
-├── .env                 # Config (non versionné)
-├── .env.example         # Modèle pour créer son propre .env
-├── .gitignore
 │
 └── src/
-    ├── commands/        # Commandes du bot (si existant)
-    └── data/
-        ├── users.json
-        ├── products.json
-        ├── orders.json
-        └── logs.json
+    ├── bot.js             # Initialisation du bot Telegram
+    │
+    ├── config/
+    │   └── crypto.js      # Chiffrement / déchiffrement
+    │
+    ├── data/              # Données locales (ignorées par Git)
+    │   ├── logs.json
+    │   ├── orders.json
+    │   ├── products.json
+    │   └── users.json
+    │
+    ├── handlers/          # Gestion des interactions Telegram
+    │   ├── admin.js
+    │   ├── callbacks.js
+    │   ├── messages.js
+    │   └── start.js
+    │
+    └── utils/             # Fonctions utilitaires
+        ├── explorer.js
+        └── files.js
 ```
 
 ---
@@ -42,7 +56,7 @@ queenbot/
 ### 1️⃣ Cloner le repo
 
 ```bash
-git clone https://github.com/ton-utilisateur/queenbot.git
+git clone https://github.com/alien-dotcom-afk/queenbot.git
 cd queenbot
 ```
 
