@@ -1,0 +1,24 @@
+# Environment variables
+.env
+.env.*
+
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Data folder
+src/data/
+
+# Optional OS / editor files
+.DS_Store
+Thumbs.db
+
+# Build outputs (if any)
+dist/
+build/
