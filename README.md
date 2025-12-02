@@ -21,7 +21,6 @@ Il gère différentes données (produits, utilisateurs, commandes, logs) stocké
 queenbot/
 │
 ├── .env                   # Variables d’environnement (non versionné)
-├── .env.example           # Modèle pour créer son .env
 ├── index.js               # Entrée principale
 ├── package-lock.json
 ├── package.json
