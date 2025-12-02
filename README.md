@@ -20,7 +20,7 @@ Il gère différentes données (produits, utilisateurs, commandes, logs) stocké
 ```
 queenbot/
 │
-├── .env                   # Variables d’environnement (non versionné)
+├── .env                   # Variables d’environnement
 ├── index.js               # Entrée principale
 ├── package-lock.json
 ├── package.json
